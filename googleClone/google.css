@@ -1,0 +1,119 @@
+.header{
+    color:rgb(255, 189, 226);
+    margin-top: 20px;
+    margin-left: 20px;
+
+    display: flex;
+}
+
+.header a{
+    text-decoration: none;
+    color:rgb(255, 189, 226);
+}
+
+.header a:active{
+    color: rgb(255, 189, 226);
+}
+
+.header span{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.header span:hover{
+    text-decoration: underline;
+} 
+
+
+.googleInfo{
+    margin-right: auto;
+}
+
+.userInfo{
+    margin-left: auto;
+}
+
+.main{
+    text-align: center;
+    align-items: center;
+    
+}
+
+.title{
+    font-size: 100px;
+    color: hotpink;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.title span{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+.search{
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input::placeholder{
+    color: rgb(182, 182, 182);
+    
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(255, 189, 226);
+    color: white;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+#searchBar{
+    min-width: 600px;
+    max-width: 600px;
+
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid;
+    border-radius: 100px;
+    border-color: rgb(255, 189, 226);
+
+    font-size: 20px;
+}
+
+
+
+#searchBar:hover{
+    animation-duration: 0.5s;
+    animation-name: changeColor;
+    
+    background-color: rgb(255, 189, 226);
+    color: white;
+}
+
+@keyframes changeColor {
+    from{
+        background-color: white;
+        color: #222;
+    }
+    to{
+        background-color: rgb(255, 189, 226);
+        color: white;
+    }
+}
+
+#searchBar:hover::-webkit-input-placeholder{
+    color: white;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER</title>
+    <link rel="stylesheet" href="naver.css">
+</head>
+<body>
+    
+    <div class="flex_column">
+        <div class="margin_left_auto" id="outside_div">
+            <span class="cursor_point" id="outside">네이버를 시작페이지로</span>
+            <span class="cursor_point" id="outside">쥬니버네이버</span>
+            <span class="cursor_point" id="outside">해피빈</span>
+        </div>
+        <div class="margin_center flex_row flex_item_center">
+            <div id="main_logo"">
+                <img src="image/01 NAVER Logo_Green.png"  width="150px" alt="">
+            </div>
+                
+            <div>
+                <input type="text" class="search" id="search_input">
+                <span class="search cursor_point green_btn">검색</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="flex_row">
+        <div class="margin_center main_meue flex_row">
+            <div id="meue_main">
+                <span class="font_green font_bold cursor_point">메일</span>
+                <span class="font_green font_bold cursor_point">카페</span>
+                <span class="font_green font_bold cursor_point">블로그</span>
+                <span class="font_green font_bold cursor_point">지식iN</span>
+                <span class="font_green font_bold cursor_point">쇼핑</span>
+                <span class="font_green font_bold cursor_point">쇼핑Live</span>
+                <span class="font_green font_bold cursor_point">Pay</span>
+                <span class="font_green font_bold cursor_point">TV</span>
+                <span class="font_bold cursor_point">사전</span>
+                <span class="font_bold cursor_point">뉴스</span>
+                <span class="font_bold cursor_point">증권</span>
+                <span class="font_bold cursor_point">부동산</span>
+                <span class="font_bold cursor_point">지도</span>
+                <span class="font_bold cursor_point">VIBE</span>
+                <span class="font_bold cursor_point">책</span>
+                <span class="font_bold cursor_point">웹툰</span>
+                <span class="font_bold cursor_point" id="meue_detail_btn" onclick="displayDetail(this)">더보기▼</span>
+            </div>
+            
+            <div id="meue_weather">
+                <span class="font_bold cursor_point">날씨</span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <hr>
+
+    <div class="flex_row" >
+        <div class="margin_center flex_row" id="detail_meue">
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">1
+                <span class="cursor_point">aaaaaaaaaaa</span>
+                <span class="cursor_point">b</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">2
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">bbbbbbbbb</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">3
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">b</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">eeeeeeeee</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">4
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">b</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">5
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">b</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">6
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">vvb</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+            <div id="detail_meue_line">
+                
+            </div>
+            <div class="flex_column">7
+                <span class="cursor_point">a</span>
+                <span class="cursor_point">b</span>
+                <span class="cursor_point">c</span>
+                <span class="cursor_point">d</span>
+                <span class="cursor_point">e</span>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <div class="flex_row">
+        <div class="margin_center flex_row" id="main_content">
+            <div class="flex_item">
+                <section id="advertisement_section">
+                    <div class="main_content" id="advertisement">광고1</div>
+                   
+                </section>
+                <div class="news_background">뉴스</div>
+            </div>
+    
+            <div class="flex_item"> 
+                <div class="news_background flex_column " id="login_com">
+                    <div class="login_com_font">네이버를 더 안전하고 편리하게 이용하세요</div>
+                    
+                    <div class="green_btn cursor_point text_align_center font_bold" id="sign_in_btn">NAVER 로그인</div>
+                 
+                    <div class="flex_row user_info_div">
+                        <span class="cursor_point login_com_font" id="find_id_btn">아이디</span>
+                        <span class="cursor_point login_com_font" id="find_pw_btn">비밀번호찾기</span>
+                        <span class="cursor_point login_com_font" id="sign_up_btn">회원가입</span>
+                    </div>
+                </div>
+                <div class="news_background">
+                    환율정보등등
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="naver.js"></script>
+</body>
+</html>

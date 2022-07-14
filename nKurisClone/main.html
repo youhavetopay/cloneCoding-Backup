@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광운대학교 연구지원시스템</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="onloadTest()">
+    <div class="board flex_columns">
+       
+        <div class="header flex_row">
+            <div class="flex_row flex_meue" id="title">
+                <div class="text_bold text_center" id="main_logo">로고</div>
+                <div class="text_bold text_center" id="main_title">nKURIS</div>
+            </div>
+           
+            <div class="header_comment"><span style="font-weight: bold;" >관리자</span> <span>님 환영합니다.</span></div>
+            <div id="header_line"></div>
+            <div class="flex_row">
+                <div class="text_bold" id="session_time">30:00</div>
+                <div class="text_bold cursor_pointer" id="session_add_btn">시간연장</div>
+            </div>
+            <div class="flex_row right_set">
+                <div class="header_user_btn text_bold cursor_pointer" style="margin-right: 5px;">암호변경</div>
+                <div class="header_user_btn text_bold cursor_pointer">로그아웃</div>
+            </div>
+            
+        </div>
+        
+
+
+        <div class="content flex_row">
+            <div class="flex_meue" id="main_meue">
+                <div>
+                    <div class="text_center" id="pg_title">광운대학교 연구지원시스템</div>
+                </div>
+                <div class="meue flex_column">
+                    <div class="meue_item" >
+                        <div class="meue_title" onclick="onclickMeue(this)">시스템</div>
+                        <div class="sub_meue">
+                            <div class="sub_title" onclick="onclickMeue(this)">공통업무</div>
+                            <div class="detail_meue">
+                                <div class="detail_title">공통코드관리</div>
+                                <div class="detail_title">공통기준정보</div>
+                                <div class="detail_title">로그분석조회</div>
+                                <div class="detail_title">개인정보작업이력</div>
+                            </div> 
+                            <div class="sub_title" onclick="onclickMeue(this)">프로그램</div>
+                            <div class="detail_meue">
+                                <div class="detail_title">프로그램관리</div>
+                                <div class="detail_title">그룹관리</div>
+                                <div class="detail_title">사용자메뉴조회</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+
+
+                    <div class="meue_item">
+                        <div class="meue_title" onclick="onclickMeue(this)">업적평가</div>
+                        <div class="sub_meue">
+                            <div class="sub_title">연구업적등록</div>
+                        </div>
+                    </div>
+                    
+                    <div class="meue_item">
+                        <div class="meue_title" onclick="onclickMeue(this)">연구비(관리자)</div>
+                        <div class="sub_meue">
+                            <div class="sub_title" onclick="onclickMeue(this)">기본정보</div>
+                            <div class="detail_meue">
+                                <div class="detail_title">코드정보관리</div>
+                                <div class="detail_title">기준정보관리</div>
+                                <div class="detail_title">산학부서마스터</div>
+                                <div class="detail_title">담당자 권한관리</div>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="meue_item">
+                        <div class="meue_title">결재</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">연구비</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">학생인건비통합관리</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">학술지원사업</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">구매자산관리</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">예산</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">회계</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">총무</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">지식재산</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">산학인사</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <div class="meue_item">
+                        <div class="meue_title">산학급여</div>
+                        <div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_column" id="main_content">
+                <div class="flex_row flex_grow">
+                    <div class="main_btn text_center" id="homepage_btn" style="margin-right: 5px;">산단홈페이지</div>
+                    <div class="main_btn text_center" id="sms_btn">SMS</div>
+                </div>
+
+                <div class="flex_row flex_grow" id="search_main">
+                    <div class="flex_column flex_grow">
+                        <div class="flex_row_center">
+                            <div class="search_title">제목</div>
+                            <div class="search_input_div">
+                                <input type="text" class="search_input">
+                            </div>
+                            
+                        </div>
+                        <div class="flex_row_center">
+                            <div class="search_title">사용여부</div>
+                            <div class="search_input_div flex_row">
+                                <label for="" style="flex-grow: 1; flex-basis: 1;"><input type="radio" name="test" value="1awdawd" id="" >전체</label> 
+                                <label for="" style="flex-grow: 1; flex-basis: 1;"><input type="radio" name="test" value="3awdadw" id="">Y</label>
+                                <label for="" style="flex-grow: 1; flex-basis: 1;"><input type="radio" name="test" value="2awdawd" id="">N</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex_column flex_grow">
+                        <div class="flex_row_center">
+                            <div class="search_title">작성자</div>
+                            <div class="search_input_div">
+                                <input type="text" class="search_input">
+                            </div>
+                        </div>
+                        <div class="flex_row_center">
+                            <div class="search_title">작성기간</div>
+                            <div class="search_input_div">
+                                <input type="date" name="" id="">
+                                <input type="date" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex_column flex_grow" style="flex-grow: 5; margin-right: 10px;">
+                        <div class="flex_row_center">
+                            <div class="search_title">기관구분</div>
+                            <div class="">
+                                <select name="" class="search_combo" id="" >
+                                    <option value="">132132</option>
+                                    <option value="">132132</option>
+                                    <option value="">132132</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex_row_center">
+                            <div class="search_title">공지구분</div>
+                            <div class="">
+                                <select name="" class="search_combo" id="" >
+                                    <option value="1">내부공지</option>
+                                    <option value="2">기관공지</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex_column_center flex_grow">
+                        <div class="flex_row">
+                            <div class="main_btn text_center search_btn" style="margin-right: 5px;" id="main_table_search_btn">조회</div>
+                            <div class="main_btn text_center search_btn" id="main_table_delete_btn">삭제</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="main_content_margin table_div flex_grow" id="noti_table_main" style="flex-grow: 100;">
+                    <div class="table_count">→총 oooooooooooooooooooo 건이 조회되었습니다.</div>
+                    <table class="table_comm" id="table_main" >
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" name="head_check" id=""></th>
+                                <th>번호</th>
+                                <th>공지구분</th>
+                                <th>제목</th>
+                                <th>작성일자</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="table_main_tbody">
+                            <tr class="table_tr" >
+                                <td onclick="tableClikeEvent(this, true)"><input type="checkbox" name="head_check" id=""></td>
+                                <td onclick="tableClikeEvent(this, true)">13457</td>
+                                <td onclick="tableClikeEvent(this, true)">내부공지</td>
+                                <td class="text_left" onclick="tableClikeEvent(this, true)">[학생인건비통합관리] 2021 ㅁㅇㅈㅁㅇㅈㅁㅈㅁㅇㅈㅇㅁㅈ</td>
+                                <td onclick="tableClikeEvent(this, true)">2021.04.26</td>
+                            </tr>
+    
+                            <tr class="table_tr">
+                                <td onclick="tableClikeEvent(this, true)"><input type="checkbox" name="head_check" id=""></td>
+                                <td onclick="tableClikeEvent(this, true)">13456</td>
+                                <td onclick="tableClikeEvent(this, true)">내부공지</td>
+                                <td class="text_left" onclick="tableClikeEvent(this, true)">[산학협력단] 2020년 ㅁㅈㅇㅁㅇㅈㅁㅈㅇㅈㅁㅇㅈㅇㅁㅁㅈㅇㅁㅈㅇ</td>
+                                <td onclick="tableClikeEvent(this, true)"> 2021.04.26</td>
+                            </tr>
+
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="main_content_margin flex_column flex_grow" id="noti_detail_edit" style="flex-grow: 50;">
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text_right">제목</td>
+                                <td colspan="3"><input type="text" style="width: 100%;"></td>
+                                <td class="text_right">공지구분</td>
+                                <td colspan="2">
+                                    <select name="" id="" style="width: 100%;">
+                                        <option value="1">내부공지</option>
+                                        <option value="2">기관공지</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <span class="main_btn" id="main_table_add_btn" onclick="addMainTable()">신규</span>
+                                    <span class="main_btn" id="main_table_save_btn">저장</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text_right">내용</td>
+                                <td colspan="7"><textarea name="" id="noti_content" cols="30" rows="13" style="width: 100%; height: 100%; resize: none;"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="text_right">작성자</td>
+                                <td><input type="text"></td>
+                                <td class="text_right">작성일시</td>
+                                <td><input type="date" name="" id="noti_write_date"></td>
+                                <td class="text_right">상단노출기간</td>
+                                <td>
+                                    <input type="date" name="" id="">
+                                    <input type="date" name="" id="">
+                                </td>
+                                <td class="main_btn text_center" id="noit_notadd_btn">미등록</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="flex_row">
+                        <div class="flex_row">
+                            <div>제목</div>
+                            <input type="text">
+                        </div>
+                        <div class="flex_row">
+                            <div>공지구분</div>
+                            <select name="" id="">
+                                <option value="">132132</option>
+                                <option value="">132132</option>
+                                <option value="">132132</option>
+                            </select>
+                        </div>
+                        <div class="flex_row">
+                            <div class="main_btn">신규</div>
+                            <div class="main_btn">저장</div>
+                        </div>
+                    </div>
+
+                    <div class="flex_row">
+                        <div class="flex_row">
+                            <div>내용</div>
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="flex_row"> 
+                        <div class="flex_row">
+                            <div>작성자</div>
+                            <input type="text">
+                        </div>
+                        <div class="flex_row">
+                            <div>작성일시</div>
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="flex_row">
+                            <div>상단노출기간</div>
+                            <input type="date" name="" id="">
+                            <input type="date" name="" id="">
+                        </div>
+                        <div class="flex_row">
+                            <div>미등록</div>
+                        </div>
+                    </div> -->
+                </div>
+
+
+                <div class="main_content_margin table_div flex_grow">
+                    <div class="table_count">→총 oooooooooooooooooooo 건이 조회되었습니다.</div>
+                    <table class="table_comm">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%;">파일번호</th>
+                                <th colspan="2">첨부파일명</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="table_tr">
+                                <td>1</td>
+                                <td class="text_left">201810 한국연구재단 관림ㅈㅇㅁㅇㅈㅁㅇㅈㅈㅁㅇㅇㅁㅈㅁㅈㅇㅁㅈㅇ</td>
+                                <td class="file_down_btn">파일다운</td>
+                            </tr>
+
+                            <tr class="table_tr">
+                                <td>1</td>
+                                <td class="text_left">201810 한국연구재단 관림ㅈㅇㅁㅇㅈㅁㅇㅈㅈㅁㅇㅇㅁㅈㅁㅈㅇㅁㅈㅇ</td>
+                                <td class="file_down_btn">파일다운</td>
+                            </tr>
+
+                            <tr class="table_tr">
+                                <td>1</td>
+                                <td class="text_left">201810 한국연구재단 관림ㅈㅇㅁㅇㅈㅁㅇㅈㅈㅁㅇㅇㅁㅈㅁㅈㅇㅁㅈㅇ</td>
+                                <td class="file_down_btn">파일다운</td>
+                            </tr>
+
+                            <tr class="table_tr">
+                                <td>1</td>
+                                <td class="text_left">201810 한국연구재단 관림ㅈㅇㅁㅇㅈㅁㅇㅈㅈㅁㅇㅇㅁㅈㅁㅈㅇㅁㅈㅇ</td>
+                                <td class="file_down_btn">파일다운</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
